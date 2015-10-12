@@ -1,0 +1,94 @@
+
+
+.hexagon {
+  position: relative;
+  width: 450px; 
+  height: 259.81px;
+  background-color: #412A22;
+  margin: 129.90px 0;
+  transform: rotate(-30deg);  /* remove to make pointy on the bottom */
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 225px solid transparent;
+  border-right: 225px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 129.90px solid #412A22;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 129.90px solid #412A22;
+}
+
+
+.menu-hexagon {
+  position: relative;
+  width: 80px; 
+  height: 46.19px;
+  background-color: #64C7CC;
+  margin: 23.09px 0;
+  transform: rotate(-30deg);  /* remove to make pointy on the bottom */
+}
+
+.menu-hexagon:before,
+.menu-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.menu-hexagon:before {
+  bottom: 100%;
+  border-bottom: 23.09px solid #64C7CC;
+}
+
+.menu-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 23.09px solid #64C7CC;
+}
+
+.menu-hexagon2 {
+  position: relative;
+  width: 80px; 
+  height: 46.19px;
+  background-color: #64C7CC;
+  margin: 23.09px 0;
+}
+
+.menu-hexagon2:before,
+.menu-hexagon2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.menu-hexagon2:before {
+  bottom: 100%;
+  border-bottom: 23.09px solid #64C7CC;
+}
+
+.menu-hexagon2:after {
+  top: 100%;
+  width: 0;
+  border-top: 23.09px solid #64C7CC;
+}
+
+/* .hex-project must be at the bottom of the stylesheet */
+.hex-project {
+  margin-top: -10px;
+  margin-left:-70px
+}
