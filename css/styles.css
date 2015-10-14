@@ -1,202 +1,49 @@
-.menu-hexagon {
-  position: relative;
-  width: 80px; 
-  height: 46.19px;
-  background-color: #64C7CC;
-  margin: 23.09px 0;
-  transform: rotate(-30deg);  /* remove to make pointy on the bottom */
-}
-
-.menu-hexagon:before,
-.menu-hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-}
-
-.menu-hexagon:before {
-  bottom: 100%;
-  border-bottom: 23.09px solid #64C7CC;
-}
-
-.menu-hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 23.09px solid #64C7CC;
-}
-
-.menu-hexagon2 {
-  position: relative;
-  width: 80px; 
-  height: 46.19px;
-  background-color: #64C7CC;
-  margin: 23.09px 0;
-}
-
-.menu-hexagon2:before,
-.menu-hexagon2:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-}
-
-.menu-hexagon2:before {
-  bottom: 100%;
-  border-bottom: 23.09px solid #64C7CC;
-}
-
-.menu-hexagon2:after {
-  top: 100%;
-  width: 0;
-  border-top: 23.09px solid #64C7CC;
-}
-
-/*******************************************************/
-@media (min-width:1000px) {
-  
-  .hexagon {
-    position: relative;
-    width: 450px; 
-    height: 259.81px;
-    margin: 129.90px 0;
-    background-image: url(http://csshexagon.com/img/meow.jpg);
-    background-size: auto 519.6152px;
-    background-position: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.35);
-    transform: rotate(-30deg);
-  }
-  
-  .hexTop,
-  .hexBottom {
-    position: absolute;
-    z-index: 1;
-    width: 318.20px;
-    height: 318.20px;
-    overflow: hidden;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background: inherit;
-    left: 65.90px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.35);
-  }
-  
-  /*counter transform the bg image on the caps*/
-  .hexTop:after,
-  .hexBottom:after {
-    content: "";
-    position: absolute;
-    width: 450.0000px;
-    height: 259.8076211353316px;
-    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-129.9038px);
-    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-129.9038px);
-    transform:          rotate(45deg) scaleY(1.7321) translateY(-129.9038px);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background: inherit;
-  }
-  
-  .hexTop {
-    top: -159.0990px;
-  }
-  
-  .hexTop:after {
-    background-position: center top;
-  }
-  
-  .hexBottom {
-    bottom: -159.0990px;
-  }
-  
-  .hexBottom:after {
-    background-position: center bottom;
-  }
-  
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    top: 0.0000px;
-    left: 0;
-    width: 450.0000px;
-    height: 259.8076px;
-    z-index: 2;
-    background: inherit;
-  }
-}
-@media (max-width: 1000px) and (min-width:601px) {
-  .hexagon {
-    position: relative;
-    width: 300px; 
-    height: 173.21px;
-    margin: 86.60px 0;
-    background-image: url(http://csshexagon.com/img/meow.jpg);
-    background-size: auto 346.4102px;
-    background-position: center;
-    box-shadow: 0 0 5px rgba(0,0,0,0.35);
-  }
-  
-  .hexTop,
-  .hexBottom {
-    position: absolute;
-    z-index: 1;
-    width: 212.13px;
-    height: 212.13px;
-    overflow: hidden;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background: inherit;
-    left: 43.93px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.35);
-  }
-  
-  /*counter transform the bg image on the caps*/
-  .hexTop:after,
-  .hexBottom:after {
-    content: "";
-    position: absolute;
-    width: 300.0000px;
-    height: 173.20508075688775px;
-    -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
-    -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
-    transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background: inherit;
-  }
-  
-  .hexTop {
-    top: -106.0660px;
-  }
-  
-  .hexTop:after {
-    background-position: center top;
-  }
-  
-  .hexBottom {
-    bottom: -106.0660px;
-  }
-  
-  .hexBottom:after {
-    background-position: center bottom;
-  }
-  
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    top: 0.0000px;
-    left: 0;
-    width: 300.0000px;
-    height: 173.2051px;
-    z-index: 2;
-    background: inherit;
-  }
-}
-/*******************************************************/
-/* .hex-project must be at the bottom of the stylesheet */
+    @media (min-width: 1000px) {
+          .hex-project-a {
+            margin-top: 112px;
+            margin-left: 3px;
+          }
+          .hex-project-b {
+            margin-left:-62px
+          }
+          .hex-project-c {
+            margin-top: 225px;
+            margin-left:-62px
+          }
+          .hex-project-d {
+            margin-top: 337px;
+            margin-left: 3px
+          }
+    }
+    @media (max-width: 999px) {
+          .honeycombs {
+            margin-top: -112px;
+          }
+    }
+    body {
+      min-height: 1000px;
+      padding-top: 70px;
+      font-family: 'Montserrat', serif;
+      background-color: #F2E6B6;
+      background-image: url(../img/bg_tan.png);
+      color: #303030;
+    }
+    .navbar {
+       background:rgba(255,255,255,0.8);   /* translucent nav bar */
+    }
+    .hex-right {
+      width: 280px;
+    	margin-left:200px;
+    	text-align: left;
+    }
+    .hex-left {
+      width: 280px;      
+    	margin-right:200px;
+    	text-align: right;
+    }
+    .text-light {
+      color: #efefef;
+    }
+    .text-dark {
+      color: #303030;
+    }
