@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <style type="text/css">
+      .hex {
+          float: left;
+          margin-left: 3px;
+          margin-bottom: -26px;
+      }
+      .hex .top {
+          width: 0;
+          border-bottom: 30px solid #6C6;
+          border-left: 52px solid transparent;
+          border-right: 52px solid transparent;
+          overflow:hidden;
+      }
+      .hex .middle {
+          width: 104px;
+          height: 60px;
+          background: #6C6;
+      }
+      .hex .bottom {
+          width: 0;
+          border-top: 30px solid #6C6;
+          border-left: 52px solid transparent;
+          border-right: 52px solid transparent;
+          overflow:hidden;
+      } 
+
+
+
+      
+    .hex-row {
+        clear: left;
+    }
+    .hex-row.even {
+        margin-left: 53px;
+    }
+    
+    .hex2 {
+        float: left;
+        margin-right: -26px;
+        margin-bottom: -50px;
+        overflow: hidden;  
+    }
+    .hex2 .left {
+        float: left;
+        width: 0;
+        
+        border-right: 30px solid #6C6;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+    }
+    .hex2 .middle {
+        float: left;
+        width: 60px;
+        height: 104px;
+        background: #6C6;
+    }
+    .hex2 .right {
+        float: left;
+        width: 0;
+        border-left: 30px solid #6C6;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+    }
+
+
+	.hex2 .left:before,
+	.hex2 .right:before {
+		width: 173px;
+		height:	173px;
+	  content: '';
+	  position: absolute;
+	  background: inherit;
+	  top:0;
+	  left: 0;
+	  z-index: 1;
+	  background: inherit;
+	  background-repeat:no-repeat;
+		backface-visibility: hidden;				  
+	}			
+	
+
+	.hex2 .left:before {
+		transform: rotate(-60deg) translate(-87px, 0px);	
+	  transform-origin: 0 0;
+	}			
+	
+	.hex2 .right:before {
+		transform: rotate(60deg) translate(-48px, -11px);	
+		bottom:0;
+	}
+
+
+    .hex2-row {
+        clear: left;
+    }
+    .hex2.even {
+        margin-top: 53px;
+    }
+
+      </style>
+  </head>
+  <body>
+
+    <div style="float: left; width: 400px;">
+        <div class="hex2-row">
+            <div class="hex2" style="background-image url(http://placehold.it/250x250)"><div class="left" style=""></div><div class="middle"></div><div class="right"></div></div>
+            <div class="hex2 even"><div class="left"></div><div class="middle">Yo Yo Yo</div><div class="right"></div></div>
+            <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        </div>
+    </div>
+    <div>
+        <div class="hex"><div class="top"></div><div class="middle">Hi Friends!</div><div class="bottom"></div></div>
+
+    </div>
+  </body>
+</html>

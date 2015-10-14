@@ -1,46 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-  <head>
-    <!-- Latest compiled and minified CSS -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery Honeycombs Plugin Demo</title>
+<link rel="stylesheet" type="text/css" href="css/homeycombs.css" />
+<link href="css/styles.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<link href="css/styles.css" rel="stylesheet"> 
-  
-  </head>
-  <body style="background-color: #F2E6B6"> 
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+@media (min-width: 1000px) {
+      .hex-project-a {
+        margin-top: 112px;
+        margin-left: 3px;
+      }
+      .hex-project-b {
+        margin-left:-62px
+      }
+      .hex-project-c {
+        margin-top: 225px;
+        margin-left:-62px
+      }
+      .hex-project-d {
+        margin-top: 337px;
+        margin-left: 3px
+      }
+}
+@media (max-width: 999px) {
+      .honeycombs {
+        margin-top: -112px;
+      }
+}
+    body {
+      min-height: 1000px;
+      padding-top: 70px;
+      font-family: 'Montserrat', serif;
+      background-color: #F2E6B6;
+      background-image: url(img/bg_tan.png);
+      color: #303030;
+    }
+    .navbar {
+       background:rgba(255,255,255,0.8);   /* for latest browsers */
+    }
+    .hex-right {
+      width: 280px;
+    	margin-left:200px;
+    	text-align: left;
+    }
+    .hex-left {
+      width: 280px;      
+    	margin-right:200px;
+    	text-align: right;
+    }
+    .text-light {
+      color: #efefef;
+    }
+    .text-dark {
+      color: #303030;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="font-family: 'Montserrat Subrayada', serif;">Reuben Thiessen</a>
+        </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+  <div class="container">
     
-    <div class="container" style="background-color: white">
+<!--
       <div class="row">
-        <div class="col-md-1 col-md-offset-1">
+
+        
+        <div class="col-xs-1 col-md-offset-1">
           <div class="menu-hexagon"></div>
         </div>
-        <div class="col-md-1" style="margin-top: 40px;margin-left:-30px">
+        <div class="col-xs-1" style="margin-top: 40px;margin-left:-30px">
           <div class="menu-hexagon"></div>
         </div>
-        <div class="col-md-1" style="margin-left:-30px">
+        <div class="col-xs-1" style="margin-left:-30px">
           <div class="menu-hexagon"></div>
         </div>
-        <div class="col-md-1" style="margin-top: 40px;">
+        <div class="col-xs-1" style="margin-top: 40px;">
           <div class="menu-hexagon2"></div>
         </div>
-        <div class="col-md-5 col-md-offset-1">
-          <div class="hexagon" style="margin-left:-3px"></div>
-        </div>
-      </div>         
-          
-      <div class="row">
-        <div class="col-md-5 col-md-offset-3">
-          <div class="hexagon hex-project"></div>
+      </div>
+-->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="honeycombs">
+        <div class="comb hex-project-a"> <img src="img/geotagging.jpg" /> <span><div class="hex-left text-light"><p class="lead" style="">Geotagging Low-fee Independent Schools</p><p>Utilizing GPS hardware and satellite data to map schools serving impoverished communities.</p></div></span></div>
+        <div class="comb hex-project-b"> <img src="img/smile-project.jpg" /> <span><div class="hex-right text-dark"><p class="lead" style="">The SMILE Project</p><p>Using technology to improve critical thinking skills in Developing World classrooms.</p></div></span></div>
+        <div class="comb hex-project-d"> <img src="img/data-viz.jpg" /> <span><div class="hex-left text-dark"><p class="lead" style="">Data Visualization</p><p>Using advanced graphical techniques to show relationships between data.</p></div></span></div>
+        <div class="comb hex-project-c"> <img src="img/quote_bg.jpg" /><span><div class="hex-right text-light"><p class="lead">&quot;There are two<br/> <em>hard things</em> in <br/>computer science: <br/>cache invalidation, naming things, and <br/>off-by-one errors.&quot;<br/>—Phil Karlton</p></span></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-6">
-          <div class="hexagon hex-project"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-3">
-          <div class="hexagon hex-project"></div>
-        </div>
-      </div>      
-    </div>    
-  </body>
+    </div>
+
+  </div> <!-- .container -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="js/jquery.homeycombs.js"></script> 
+<script src="//cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script> 
+<script src="js/jquery.html-svg-connect.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.honeycombs').honeycombs({
+  combWidth: 500,
+  margin: 0
+  });
+  $('.inner_span').show();
+});
+</script>
+</body>
 </html>

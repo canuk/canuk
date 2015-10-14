@@ -122,15 +122,17 @@
                 reorder(true);
             });
             
+/*
             $(element).find('.comb').mouseenter(function(){
                 $(this).find('.inner_span').stop(true, true);
-                $(this).find('.inner_span').fadeIn();
+                $(this).find('.inner_span').fadeTo( "slow" , 0.8);
             });
             
             $(element).find('.comb').mouseleave(function(){
                 $(this).find('.inner_span').stop(true, true);
                 $(this).find('.inner_span').fadeOut();
             });
+*/
             
             buildHtml();
             reorder(false);
