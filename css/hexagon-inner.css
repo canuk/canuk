@@ -1,0 +1,68 @@
+.hexagon {
+  position: relative;
+  width: 125px; 
+  height: 72.17px;
+  margin: 36.08px 0;
+  background-image: url(http://smilecert.herokuapp.com/assets/smile_pic_2-2385fb276fd5a31d0bdd2be50444a788b8a019a32ce3f2e3cf2bb434882b60b9.jpg);
+  background-size: auto 144.3376px;
+  background-position: center;
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 88.39px;
+  height: 88.39px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 18.31px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.6);
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 125.0000px;
+  height: 72.16878364870323px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-36.0844px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-36.0844px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-36.0844px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -44.1942px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -44.1942px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 125.0000px;
+  height: 72.1688px;
+  z-index: 2;
+  background: inherit;
+}
