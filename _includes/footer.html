@@ -1,0 +1,12 @@
+<script src="{{ "/js/jquery-2.1.0.min.js" | prepend: site.baseurl }}"></script> 
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script> 
+<script src="{{ "/js/jquery.homeycombs.js" | prepend: site.baseurl }}"></script> 
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.honeycombs').honeycombs({
+      combWidth: 500,
+      margin: 0
+    });
+    $('.inner_span').show();
+  });
+</script>
