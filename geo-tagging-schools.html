@@ -39,103 +39,138 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
    }, 0);
 }
 </script>
-
-
+<!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/homeycombs.css" />
+      <link rel="stylesheet" type="text/css" href="css/styles.css" > 
+      <link rel="stylesheet" type="text/css" href="css/hexagon-inner.css" > 
+      <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Montserrat+Subrayada'>
+      <link rel='stylesheet' type='text/css' href='css/font-awesome.min.css'>
+      <style type="text/css">
+        .navbar{
+          background-image: url(img/hex-nav-bg.png);
+          background-repeat: no-repeat;
+        }
+        .smile-content {
+        background-image: url(img/smile-inner-bg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right; 
+        min-height: 500px;
+        }
+        body {
+          background-color: #efefef;
+          background-image: url(img/inner-page_bg.png);      
+        }
+      </style>
 
 </head>
 
 <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="font-family: 'Montserrat Subrayada', serif;">Reuben Thiessen</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="inner-page.html"><i class="fa fa-fw fa-tablet"></i> The SMILE Project</a></li> 
+                <li><a href="geo-tagging-schools.html"><i class="fa fa-fw fa-map-o"></i> Geotagging Schools</a></li> 
+                <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> Data Visualization</a></li> 
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  <div class="container">
+    
+    <div id="header">
+    <h1 class="title">Schools Near Sanford Clinic, Accra, Ghana</h1>
+    <h4 class="date"><em>February 7, 2016</em></h4>
+    </div>
+    
+    
+    <p><div id="htmlwidget-969" style="width:100%;height:480px;" class="leaflet"></div>
+    <script type="application/json" data-for="htmlwidget-969">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>"}]},{"method":"addMarkers","args":[[5.669643865,5.66759652,5.709668322,5.646509059,5.655704676,5.697459153,5.6530056,5.71983829,5.720563335,5.643530992],[-0.180425115,-0.203814489,-0.165138503,-0.180367153,-0.153531883,-0.210114631,-0.1425239,-0.147942952,-0.147632724,-0.215098058],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Millie's Angels Daycare and Nursery","Amazing Faith Academy","Flobar School","ROCHMA HOME INTERNATIONAL SCHOOL","Gospel International","Peace Academy","VIP Preparatory","IMMACULATE CONCEPTION SCHOOL","AC KINGS AND QUEENS SCHOOL","Basic Skills School"],null,null]},{"method":"addMarkers","args":[5.68088,-0.17849,{"iconUrl":{"data":"http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/map-marker-icon.png","index":0},"iconWidth":38,"iconHeight":38},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Sanford International Clinic",null,null]},{"method":"addPopups","args":[5.68088,-0.17849,"Sanford International Clinic",null,null,{"maxWidth":300,"minWidth":50,"maxHeight":null,"autoPan":true,"keepInView":false,"closeButton":true,"zoomAnimation":true,"closeOnClick":null,"className":""}]}],"limits":{"lat":[5.643530992,5.720563335],"lng":[-0.215098058,-0.1425239]}},"evals":[]}</script></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th align="left">School Name</th>
+    <th align="right">km from clinic</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    
+    <td align="left">Millie’s Angels Daycare and Nursery</td>
+    <td align="right">1.27</td>
+    </tr>
+    <tr class="even">
+    
+    <td align="left">Amazing Faith Academy</td>
+    <td align="right">3.17</td>
+    </tr>
+    <tr class="odd">
+    
+    <td align="left">Flobar School</td>
+    <td align="right">3.53</td>
+    </tr>
+    <tr class="even">
+    
+    <td align="left">ROCHMA HOME INTERNATIONAL SCHOOL</td>
+    <td align="right">3.83</td>
+    </tr>
+    <tr class="odd">
+    
+    <td align="left">Gospel International</td>
+    <td align="right">3.94</td>
+    </tr>
+    <tr class="even">
+    
+    <td align="left">Peace Academy</td>
+    <td align="right">3.96</td>
+    </tr>
+    <tr class="odd">
+    
+    <td align="left">VIP Preparatory</td>
+    <td align="right">5.05</td>
+    </tr>
+    <tr class="even">
+    
+    <td align="left">IMMACULATE CONCEPTION SCHOOL</td>
+    <td align="right">5.50</td>
+    </tr>
+    <tr class="odd">
+    
+    <td align="left">AC KINGS AND QUEENS SCHOOL</td>
+    <td align="right">5.59</td>
+    </tr>
+    <tr class="even">
+    
+    <td align="left">Basic Skills School</td>
+    <td align="right">5.81</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    
+    </div>
 
-<style type="text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img { 
-  max-width:100%; 
-  height: auto; 
-}
-</style>
-<div class="container-fluid main-container">
-
-
-<div id="header">
-<h1 class="title">Schools Near Sanford Clinic</h1>
-<h4 class="date"><em>February 7, 2016</em></h4>
-</div>
-
-
-<p><div id="htmlwidget-969" style="width:672px;height:480px;" class="leaflet"></div>
-<script type="application/json" data-for="htmlwidget-969">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>"}]},{"method":"addMarkers","args":[[5.669643865,5.66759652,5.709668322,5.646509059,5.655704676,5.697459153,5.6530056,5.71983829,5.720563335,5.643530992],[-0.180425115,-0.203814489,-0.165138503,-0.180367153,-0.153531883,-0.210114631,-0.1425239,-0.147942952,-0.147632724,-0.215098058],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Millie's Angels Daycare and Nursery","Amazing Faith Academy","Flobar School","ROCHMA HOME INTERNATIONAL SCHOOL","Gospel International","Peace Academy","VIP Preparatory","IMMACULATE CONCEPTION SCHOOL","AC KINGS AND QUEENS SCHOOL","Basic Skills School"],null,null]},{"method":"addMarkers","args":[5.68088,-0.17849,{"iconUrl":{"data":"http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/map-marker-icon.png","index":0},"iconWidth":38,"iconHeight":38},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Sanford International Clinic",null,null]},{"method":"addPopups","args":[5.68088,-0.17849,"Sanford International Clinic",null,null,{"maxWidth":300,"minWidth":50,"maxHeight":null,"autoPan":true,"keepInView":false,"closeButton":true,"zoomAnimation":true,"closeOnClick":null,"className":""}]}],"limits":{"lat":[5.643530992,5.720563335],"lng":[-0.215098058,-0.1425239]}},"evals":[]}</script></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">URL</th>
-<th align="left">school_name</th>
-<th align="right">km_from_clinic</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/2023" class="uri">http://edifydb.herokuapp.com/schools/2023</a></td>
-<td align="left">Millie’s Angels Daycare and Nursery</td>
-<td align="right">1.27</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/2311" class="uri">http://edifydb.herokuapp.com/schools/2311</a></td>
-<td align="left">Amazing Faith Academy</td>
-<td align="right">3.17</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/571" class="uri">http://edifydb.herokuapp.com/schools/571</a></td>
-<td align="left">Flobar School</td>
-<td align="right">3.53</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/245" class="uri">http://edifydb.herokuapp.com/schools/245</a></td>
-<td align="left">ROCHMA HOME INTERNATIONAL SCHOOL</td>
-<td align="right">3.83</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/572" class="uri">http://edifydb.herokuapp.com/schools/572</a></td>
-<td align="left">Gospel International</td>
-<td align="right">3.94</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/660" class="uri">http://edifydb.herokuapp.com/schools/660</a></td>
-<td align="left">Peace Academy</td>
-<td align="right">3.96</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/685" class="uri">http://edifydb.herokuapp.com/schools/685</a></td>
-<td align="left">VIP Preparatory</td>
-<td align="right">5.05</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/2158" class="uri">http://edifydb.herokuapp.com/schools/2158</a></td>
-<td align="left">IMMACULATE CONCEPTION SCHOOL</td>
-<td align="right">5.50</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/2266" class="uri">http://edifydb.herokuapp.com/schools/2266</a></td>
-<td align="left">AC KINGS AND QUEENS SCHOOL</td>
-<td align="right">5.59</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="http://edifydb.herokuapp.com/schools/569" class="uri">http://edifydb.herokuapp.com/schools/569</a></td>
-<td align="left">Basic Skills School</td>
-<td align="right">5.81</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
+  </div>
 
 <script>
 
